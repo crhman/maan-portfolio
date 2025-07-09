@@ -1,0 +1,93 @@
+.hero{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+}
+.hero h1{
+    font-size: 50px;
+    font-weight: 900;
+    /* font-size: 2.5em; */
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.hero p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+    font-family: 'Roboto', sans-serif;
+}
+.hero h1 span{
+    color: #27C529;
+}
+.hero img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 100px rgba(41, 188, 12, 0.2);
+}
+.hero-btns{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    align-items: center;
+    font-weight: 500;
+}
+.hero-btns .hero-connect
+{
+    background-color: #27C529;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btns button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #27C529;
+    border: 1px solid #27C529;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.hero-btns .hero-connect:hover{
+    background-color: transparent;
+    color: #27C529;
+    border: 1px solid #27C529;
+}
+.hero-btns button:hover{
+    background-color: #27C529;
+    color: #fff;
+    border: 1px solid #27C529;
+}
+@media(max-width:768px){
+    .hero img{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 250px;
+    }
+    .hero h1{
+        font-size: 50px;
+        margin-top: -30px;
+        width: 90%;
+    }
+    .hero p{
+        font-size: 14px;
+        width: 60%;
+    }
+    .hero-btns{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
